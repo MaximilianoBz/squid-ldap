@@ -1,7 +1,7 @@
 version: "3.6"
 services:
   squid-ldap:
-    image: 'dockermax83/squid-ldap:2020090301'
+    image: 'dockermax83/squid-ldap:2020090302'
     #image: 'dockermax83/squid-ldap:latest'
     container_name: 'squid-ldap'
     ports:
@@ -10,13 +10,6 @@ services:
       - ./squid/cache:/var/spool/squid
       - ./squid/conf:/etc/squid
       - ./squid/logs:/var/log/squid
-    environment: 
-      - LDAP_ENABLE=true
-      - LDAP_HOST=10.2.8.2
-      - LDAP_PORT=389
-      - LDAP_DN="ou=Users,dc=dxi,dc=intranet"
-      - LDAP_ATTRIBUT="uid=%s"
-      - PROXY_NAME="Proxy DXI"
     restart: unless-stopped
 
 
