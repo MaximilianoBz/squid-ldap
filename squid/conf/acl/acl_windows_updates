@@ -1,0 +1,7 @@
+#HABILITAR DE NUEVO LAS PRIMERAS 3 LINEAS
+.update.microsoft.com
+.windowsupdate.microsoft.com
+.windowsupdate.com
+
+#DEJAR DESHABILITADO
+#.microsoft.com

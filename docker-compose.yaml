@@ -1,7 +1,7 @@
 version: "3.6"
 services:
   proxy-ldap:
-    image: 'dockermax83/squid-ldap:deb-v1.2'
+    image: 'dockermax83/squid-ldap:latest'
     container_name: 'proxy-ldap'
     ports:
       - "3128:3128"
@@ -12,4 +12,3 @@ services:
     restart: unless-stopped
     environment:
       - TZ=America/Argentina/Buenos_Aires
-
