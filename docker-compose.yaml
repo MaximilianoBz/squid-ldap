@@ -1,8 +1,8 @@
 version: "3.6"
 services:
   squid-ldap:
-    image: 'dockermax83/squid-ldap:2020090302'
-    #image: 'dockermax83/squid-ldap:latest'
+    #image: 'dockermax83/squid-ldap:2020090302'
+    image: 'dockermax83/squid-ldap:latest'
     container_name: 'squid-ldap'
     ports:
       - "3128:3128"
